@@ -1,41 +1,89 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT304 Final Project</title>
     <style>
-        table {
-            border-collapse: collapse;
-            width: 50%;
-            margin: 0 auto;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
-
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: left;
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #50b3a2;
+            color: white;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
         }
     </style>
 </head>
-
 <body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>IT304 Final Project</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <table>
-        <caption><h2>Introduction</h2></caption>
-        <tr>
-            <th>Name</th>
-            <td>Saurav Mishra</td>
-        </tr>
-        <tr>
-            <th>Introduction</th>
-            <td>Hello, I am a junior in the BS IT program. I enjoy learning new things.</td>
-        </tr>
-        <tr>
-            <th>Hobbies</th>
-            <td>Sleeping, Eating, Going Outside</td>
-        </tr>
-    </table>
+    <div class="container">
+        <section id="main">
+            <h1>Welcome to Our IT304 Final Project</h1>
+            <p>This is a simple homepage for our final project in IT304. Here you can find information about our project, the team behind it, and the contact information for any inquiries.</p>
+        </section>
+    </div>
 
+    <footer>
+        <p>IT304 Final Project &copy; 2023</p>
+    </footer>
 </body>
-
 </html>
 
